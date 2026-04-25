@@ -14,7 +14,7 @@
 
 <h2>Thêm công việc</h2>
 
-<form th:action="@{/add}" method="post" th:object="${todo}" >
+<form style="margin-bottom: 23px; width: 95%" class="mx-auto" th:action="@{/add}" method="post" th:object="${todo}" >
     <div class="form-group">
         <label >Nội dung </label>
         <input type="text" class="form-control" th:field="*{content}" >
@@ -41,7 +41,7 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-<a name="" id="" class="btn btn-primary" th:href="@{/}" role="button">Quay lại</a>
+<a name="" id="" class="btn btn-warning"  th:href="@{/}" role="button">Quay lại</a>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -17,7 +17,7 @@ public class TodoDTO {
     @NotBlank(message = "Nội dung không được để trống")
     private String content;
 
-    @FutureOrPresent(message = "Ngày phải từ hôm nay trở đi")
+    @FutureOrPresent(message = "Ngày không được ở quá khứ")
     private LocalDate dueDate;
 
     private String status;
